@@ -20,3 +20,23 @@ A dockerized RESTful API for managing a collection of books in a library. This A
    ```bash
    git clone https://github.com/YOUR_USERNAME/library-management-api.git
 
+
+
+# CI/CD Pipeline for Library Management API
+
+## Branch Strategy
+- **main**: Stable production-ready code.
+- **backend**: Development branch for backend changes.
+- **deploy**: Placeholder branch for potential deployment activities.
+
+## GitHub Actions Workflows
+- **Pre-Merge Validation**:
+  - Trigger: Pull requests targeting `main`.
+  - Validates code quality using linting and unit tests.
+- **Backend Component Build**:
+  - Trigger: Pushes to `backend`.
+  - Tests and builds backend components.
+
+## Deployment
+Deployment has not been configured as part of this project.
+
